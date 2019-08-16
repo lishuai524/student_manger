@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    #jdbc
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/pulice_catering?serverTimezone=GMT&amp;useSSL=false
+    username: root
+    password: 123456
+  resources:
+    #?????????,????????
+    static-locations: classpath:/resources/,classpath:/static/,classpath:/templates/,classpath:/application.properties/
+logging:
+  level:
+    com:
+      huayu:
+        student_manger:
+          mapper: debug
+mybatis:
+  configuration:
+    cache-enabled: true
+  type-aliases-package: com.huayu.student_manger.**
